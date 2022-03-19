@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsActivity"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DSA Quiz"
+            android:gravity="center"
+            android:textSize="36sp"
+
+
+            android:background="@drawable/heading_bg"
+
+            />
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+
+
+            >
+
+
+            <TextView
+                android:id="@+id/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                tools:text="Which of the following is the disadvantage of the array?"
+                android:padding="8dp"
+
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/tertiary"
+
+                android:textSize="20sp"
+                android:background="@drawable/questions_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="0dp"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_height="50dp"
+                    android:indeterminate="false"
+                    android:layout_weight="1"
+                    android:max="3"
+                    android:progress="0"
+                    android:background="@color/primary"
+
+                    />
+
+                <TextView
+                    android:id="@+id/progressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="0/9"
+
+                    android:textSize="30sp"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/optionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/option_bg"
+                tools:text="Stack and Queue data structures can be implemented through an array."
+                />
+
+            <TextView
+                android:id="@+id/optionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/option_bg"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                tools:text="Index of the first element in an array can be negative"
+                />
+
+            <TextView
+                android:id="@+id/optionThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/option_bg"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                tools:text="Wastage of memory if the elements inserted in an array are lesser than the allocated size"
+                />
+
+            <TextView
+                android:id="@+id/optionFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/option_bg"
+                tools:text="Elements can be accessed sequentially."
+                />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Submit"
+                android:backgroundTint="@color/primary"
+                />
+
+            <TextView
+                android:id="@+id/explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/option_bg"
+                tools:text="Elements can be accessed sequentially."
+                android:visibility="gone"
+                />
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
